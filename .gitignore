@@ -1,0 +1,47 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Production / Next.js builds
+.next/
+out/
+build/
+dist/
+
+# Environment files and secrets (Strict Privacy Protection)
+.env
+.env.*
+!.env.example
+*.env
+*.pem
+*.key
+*.cert
+credentials.json
+credentials*.json
+service-account*.json
+client_secret*.json
+
+# TypeScript / Logs
+next-env.d.ts
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# OS / Editor artifacts
+.DS_Store
+*.pem
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Vercel / Turborepo
+.vercel
+.turbo

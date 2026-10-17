@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" fill="none">
+    
+    <!-- Left Horn -->
+    <polygon points="20,16 38,52 54,78 68,90 56,66 42,42" fill="#FFFFFF" />
+    <polygon points="20,16 42,42 56,66 68,90 74,76 66,54 48,34" fill="#F4F5F7" />
+    <polygon points="48,34 66,54 74,76 82,68 76,52 60,36" fill="#D4D8DF" />
+
+    <!-- Right Horn -->
+    <polygon points="180,16 162,52 146,78 132,90 144,66 158,42" fill="#FFFFFF" />
+    <polygon points="180,16 158,42 144,66 132,90 126,76 134,54 152,34" fill="#F4F5F7" />
+    <polygon points="152,34 134,54 126,76 118,68 124,52 140,36" fill="#D4D8DF" />
+
+    <!-- Crown Crest (3-point royal crown motif between horns) -->
+    <polygon points="84,44 92,54 82,68 76,52" fill="#F4F5F7" />
+    <polygon points="100,28 92,54 100,60" fill="#FFFFFF" />
+    <polygon points="100,28 100,60 108,54" fill="#D4D8DF" />
+    <polygon points="116,44 124,52 118,68 108,54" fill="#D4D8DF" />
+
+    <!-- Forehead Plate Upper -->
+    <polygon points="100,60 82,68 88,80 100,74" fill="#FFFFFF" />
+    <polygon points="100,60 100,74 112,80 118,68" fill="#F4F5F7" />
+
+    <!-- Crimson Crown Jewel -->
+    <polygon points="100,66 89,78 100,88" fill="#FF2E43" />
+    <polygon points="100,66 100,88 111,78" fill="#E33D30" />
+    <polygon points="100,70 94,78 100,84 106,78" fill="#FFA3AC" opacity="0.9" />
+
+    <!-- Brow Structure -->
+    <polygon points="88,80 68,90 74,98 88,96 100,90" fill="#FFFFFF" />
+    <polygon points="112,80 100,90 112,96 126,98 132,90" fill="#F4F5F7" />
+    <polygon points="100,90 88,96 100,104" fill="#FFFFFF" />
+    <polygon points="100,90 100,104 112,96" fill="#D4D8DF" />
+
+    <!-- Esports Fierce Eyes -->
+    <polygon points="73,99 87,97 86,108 72,106" fill="#0E0F12" />
+    <polygon points="75,102 85,100 83,105 76,105" fill="#FF2E43" />
+    <polygon points="113,97 127,99 128,106 114,108" fill="#0E0F12" />
+    <polygon points="115,100 125,102 124,105 117,105" fill="#FF2E43" />
+
+    <!-- Temple & Cheek Plates -->
+    <polygon points="68,90 58,110 70,128 78,114 74,98" fill="#D4D8DF" />
+    <polygon points="58,110 52,128 66,140 70,128" fill="#7E8694" />
+    <polygon points="132,90 126,98 122,114 130,128 142,110" fill="#7E8694" />
+    <polygon points="142,110 130,128 134,140 148,128" fill="#D4D8DF" />
+    <polygon points="74,98 78,114 88,118 88,96" fill="#FFFFFF" />
+    <polygon points="126,98 112,96 112,118 122,114" fill="#F4F5F7" />
+
+    <!-- Muzzle / Snout -->
+    <polygon points="100,104 88,118 88,142 100,148" fill="#FFFFFF" />
+    <polygon points="100,104 100,148 112,142 112,118" fill="#D4D8DF" />
+    <polygon points="100,141 93,146 100,152" fill="#0E0F12" />
+    <polygon points="100,141 100,152 107,146" fill="#1C1D21" />
+    <polygon points="95,149 100,153 105,149 100,155" fill="#FF2E43" />
+
+    <!-- Aggressive Dagger Goatee / Beard -->
+    <polygon points="88,142 76,156 88,162 100,154" fill="#FFFFFF" />
+    <polygon points="112,142 100,154 112,162 124,156" fill="#D4D8DF" />
+    <polygon points="88,162 82,172 94,176 100,168" fill="#FFFFFF" />
+    <polygon points="112,162 100,168 106,176 118,172" fill="#F4F5F7" />
+    <polygon points="100,168 94,176 100,192" fill="#FFFFFF" />
+    <polygon points="100,168 100,192 106,176" fill="#D4D8DF" />
+    <polygon points="98,178 100,190 102,178 100,183" fill="#FF2E43" />
+  
+  </svg>
