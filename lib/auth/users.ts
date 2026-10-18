@@ -18,8 +18,17 @@ const DEFAULT_SALT = "goat_esports_salt_2026";
 const SEED_USERS: StoredUser[] = [
   {
     id: "user_owner_01",
+    email: "adiebhadauria@gmail.com",
+    name: "Nitendra Bhadauria",
+    role: "OWNER",
+    salt: DEFAULT_SALT,
+    passwordHash: hashPassword("goat2026", DEFAULT_SALT),
+    createdAt: "2026-01-01T00:00:00Z",
+  },
+  {
+    id: "user_owner_02",
     email: "owner@goatesports.com",
-    name: "Vedant Shukla",
+    name: "Nitendra Bhadauria",
     role: "OWNER",
     salt: DEFAULT_SALT,
     passwordHash: hashPassword("goat2026", DEFAULT_SALT),

@@ -3,6 +3,7 @@ import { SectionHeading } from "@/components/section-heading";
 import Image from "next/image";
 import Link from "next/link";
 import { gamesByDivision } from "@/data/games";
+import { organizationContact } from "@/data/organization";
 import { HeroGlassMotion } from "@/components/interaction-effects";
 
 function Arrow({ diagonal = false }: { diagonal?: boolean }) {
@@ -113,8 +114,13 @@ function PlatformSelection() {
 
 function FounderFeature() {
   return <section className="founder-feature" aria-labelledby="founder-feature-title">
-    <div className="founder-feature-art" aria-hidden="true"><span>VS</span><span>GOAT / LEADERSHIP</span></div>
-    <div className="founder-feature-copy"><p className="eyebrow">THE PEOPLE BEHIND GOAT</p><h2 id="founder-feature-title">BUILT WITH<br />INTENT.</h2><p>Meet Vedant Shukla, Founder &amp; CEO. Founder biography and portrait will be added when supplied.</p><Link className="text-link" href="/founder">FOUNDER PROFILE <Arrow diagonal /></Link></div>
+    <div className="founder-feature-art" aria-hidden="true"><span>NB</span><span>GOAT / LEADERSHIP</span></div>
+    <div className="founder-feature-copy">
+      <p className="eyebrow">THE PEOPLE BEHIND GOAT</p>
+      <h2 id="founder-feature-title">BUILT WITH<br />INTENT.</h2>
+      <p>Meet {organizationContact.founder}, {organizationContact.title}. Leading GOAT Esports across all competitive and community divisions.</p>
+      <Link className="text-link" href="/founder">FOUNDER PROFILE <Arrow diagonal /></Link>
+    </div>
   </section>;
 }
 

@@ -54,7 +54,7 @@ To configure production secrets, create a `.env.local` or configure deployment e
 AUTH_SECRET=your-secure-32-byte-secret-key-here
 
 # Verified Organization Owner Email (automatically elevates this user to OWNER upon authentication)
-OWNER_EMAIL=vedant@goatesports.com
+OWNER_EMAIL=adiebhadauria@gmail.com
 
 # Optional Google OAuth Integration
 AUTH_GOOGLE_ID=your-google-oauth-client-id
