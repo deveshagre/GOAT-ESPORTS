@@ -114,12 +114,12 @@ function PlatformSelection() {
 
 function FounderFeature() {
   return <section className="founder-feature" aria-labelledby="founder-feature-title">
-    <div className="founder-feature-art" aria-hidden="true"><span>NB</span><span>GOAT / LEADERSHIP</span></div>
+    <div className="founder-feature-art" aria-hidden="true"><span>VS · NB</span><span>GOAT / LEADERSHIP</span></div>
     <div className="founder-feature-copy">
       <p className="eyebrow">THE PEOPLE BEHIND GOAT</p>
       <h2 id="founder-feature-title">BUILT WITH<br />INTENT.</h2>
-      <p>Meet {organizationContact.founder}, {organizationContact.title}. Leading GOAT Esports across all competitive and community divisions.</p>
-      <Link className="text-link" href="/founder">FOUNDER PROFILE <Arrow diagonal /></Link>
+      <p>Meet {organizationContact.founder}, {organizationContact.title} of GOAT Esports. Leading the organization with a player-first vision across all competitive and community divisions.</p>
+      <Link className="text-link" href="/founder">MEET THE FOUNDERS <Arrow diagonal /></Link>
     </div>
   </section>;
 }

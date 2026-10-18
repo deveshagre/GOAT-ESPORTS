@@ -430,6 +430,8 @@ button { font: inherit; }
 .achievement-list { border-bottom:1px solid var(--line); }
 .achievement-row { grid-template-columns:.7fr 2fr 1fr 1fr; align-items:center; padding:19px 0; }
 .achievement-row > span { color:#aaa79f; font-size:10px; }
+.founders-list { display:flex; flex-direction:column; gap:80px; }
+.founders-list .founder-profile + .founder-profile { padding-top:60px; border-top:1px solid rgba(255,239,241,.14); }
 .founder-profile { display:grid; grid-template-columns:minmax(260px,.95fr) minmax(0,1.05fr); gap:8vw; align-items:center; }
 .founder-portrait { min-height:430px; position:relative; display:grid; place-items:center; overflow:hidden; background:radial-gradient(ellipse at 50% 45%,rgba(227,61,48,.16),transparent 55%),#171716; border:1px solid var(--line); }
 .founder-portrait::before,.founder-portrait::after { content:""; position:absolute; width:55%; aspect-ratio:1; border:1px solid rgba(238,236,229,.12); transform:rotate(45deg); }

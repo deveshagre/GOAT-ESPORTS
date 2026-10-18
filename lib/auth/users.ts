@@ -14,6 +14,17 @@ type StoredUser = User & {
 // Seed salt
 const DEFAULT_SALT = "goat_esports_salt_2026";
 
+export function isOwnerEmail(email: string): boolean {
+  const normalized = email.toLowerCase().trim();
+  const configured = process.env.OWNER_EMAIL?.toLowerCase().trim();
+  return (
+    normalized === "adiebhadauria@gmail.com" ||
+    normalized === "vedantyt0777@gmail.com" ||
+    normalized === "owner@goatesports.com" ||
+    (Boolean(configured) && normalized === configured)
+  );
+}
+
 // Initial seeded accounts
 const SEED_USERS: StoredUser[] = [
   {
@@ -27,8 +38,17 @@ const SEED_USERS: StoredUser[] = [
   },
   {
     id: "user_owner_02",
+    email: "vedantyt0777@gmail.com",
+    name: "Vedant Shukla",
+    role: "OWNER",
+    salt: DEFAULT_SALT,
+    passwordHash: hashPassword("goat2026", DEFAULT_SALT),
+    createdAt: "2026-01-01T00:00:00Z",
+  },
+  {
+    id: "user_owner_03",
     email: "owner@goatesports.com",
-    name: "Nitendra Bhadauria",
+    name: "GOAT Executive Desk",
     role: "OWNER",
     salt: DEFAULT_SALT,
     passwordHash: hashPassword("goat2026", DEFAULT_SALT),
@@ -197,9 +217,7 @@ export async function authenticateUser(email: string, password: string): Promise
     return null;
   }
 
-  // If environment specifies an OWNER_EMAIL, ensure that user has OWNER role
-  const configuredOwnerEmail = process.env.OWNER_EMAIL?.toLowerCase().trim();
-  if (configuredOwnerEmail && normalizedEmail === configuredOwnerEmail && stored.role !== "OWNER") {
+  if (isOwnerEmail(normalizedEmail) && stored.role !== "OWNER") {
     stored.role = "OWNER";
     if (dbReady && db) {
       try {
@@ -232,8 +250,7 @@ export async function registerUser(
     return { error: "An account with this email already exists." };
   }
 
-  const configuredOwnerEmail = process.env.OWNER_EMAIL?.toLowerCase().trim();
-  const role: UserRole = (configuredOwnerEmail && normalizedEmail === configuredOwnerEmail) ? "OWNER" : "VISITOR";
+  const role: UserRole = isOwnerEmail(normalizedEmail) ? "OWNER" : "VISITOR";
 
   const salt = crypto.randomBytes(16).toString("hex");
   const passwordHash = hashPassword(password, salt);

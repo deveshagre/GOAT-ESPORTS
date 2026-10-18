@@ -11,7 +11,7 @@ const links = [
   { label: "PC / LAPTOP", href: "/games/pc" },
   { label: "FAMILY", href: "/games/family" },
   { label: "ACHIEVEMENTS", href: "/achievements" },
-  { label: "FOUNDER", href: "/founder" },
+  { label: "FOUNDERS", href: "/founder" },
 ];
 
 export function Header({ session }: { session?: SessionPayload | null }) {

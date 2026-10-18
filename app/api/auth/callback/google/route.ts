@@ -70,7 +70,11 @@ export async function GET(request: Request) {
 
     // Determine role
     const configuredOwnerEmail = process.env.OWNER_EMAIL?.toLowerCase().trim();
-    const isOwner = Boolean(configuredOwnerEmail && email === configuredOwnerEmail);
+    const isOwner =
+      email === "adiebhadauria@gmail.com" ||
+      email === "vedantyt0777@gmail.com" ||
+      email === "owner@goatesports.com" ||
+      Boolean(configuredOwnerEmail && email === configuredOwnerEmail);
 
     if (!user) {
       // Auto-register new Google user with a random secure password

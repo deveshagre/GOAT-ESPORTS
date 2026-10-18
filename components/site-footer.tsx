@@ -21,13 +21,13 @@ export function SiteFooter() {
           <Link href="/games/pc">PC / LAPTOP</Link>
           <Link href="/games/family">FAMILY</Link>
           <Link href="/achievements">ACHIEVEMENTS</Link>
-          <Link href="/founder">FOUNDER</Link>
+          <Link href="/founder">FOUNDERS</Link>
           <Link href="/account">PLAYER PORTAL</Link>
           <Link href="/contact">CONTACT</Link>
         </nav>
       </div>
-      <nav className="footer-social" aria-label="Founder social links">
-        <span>FOUNDER CHANNELS</span>
+      <nav className="footer-social" aria-label="Founders social links">
+        <span>FOUNDERS CHANNELS</span>
         {organizationContact.social.map((item) => (
           <a key={item.label} href={item.href} target="_blank" rel="noreferrer">{item.label} ↗</a>
         ))}
